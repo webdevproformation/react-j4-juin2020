@@ -91,3 +91,17 @@ une grosse partie de 'lapplication est géré directement dans RAM du navigateur
 
 => Application très rapide en terme de chargement
 
+
+Cas pratique
+
+1 Créer un nouveau composant Contact.jsx 
+l'enregistrer dans le dossier src/front 
+
+dans le render du composant Contact => <h1>Nous contacter</h1> 
+
+2 Ajouter dans App.js  une nouvelle route 
+
+/contact => Contact.jsx  
+
+3 dans la barre de menu (NavBar)
+Ajouter un nouveau Link cliquer sur le texte Contact => le composant Contact
