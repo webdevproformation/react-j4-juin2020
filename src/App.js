@@ -6,6 +6,7 @@ import NavBar from "./Navbar";
 import { Route } from "react-router-dom";
 import Home from "./front/Home";
 import Articles from "./front/Articles";
+import Contact from "./front/Contact";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <NavBar />
       <div>
         <Route path="/articles" component={Articles} />
+        <Route path="/contact" component={Contact} />
         <Route path="/" exact component={Home} />
       </div>
     </div>
