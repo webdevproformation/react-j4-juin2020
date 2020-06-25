@@ -113,12 +113,80 @@ src/front
 
 dans le render
 <div>
-<h1>article numéro</h1>
-<p>lorem ipsum</p>
+    <h1>article numéro</h1>
+    <p>lorem ipsum</p>
 <div>
 
 dans le fichier App.js créer nouvelle route => pattern
 dans la barre d'adresse 
 => route articles/:id => Post
 Avant  <Route path="/articles" component={Articles} />
+
+-------------------
+
+Question ??
+
+
+=> quelque soit la technologie ? 
+=> barre de menu 
+
+
+fin de matinée 
+=> Hicham 
+
+=> dans le composant Post 
+
+ this.props.history.push("/articles"); => aller vers la page listes articles 
+
+this.props.match.params.id ; (dans le render) => récupérer l'information qui est saisie dans l'url
+
+=> $_GET["id]
+=> $_GET["titre"] ?? en PHP
+
+=> ces propriétés :  history / match (donnée par le react-router-dom)
+=> donnée via le Composant Route 
+=> site officiel qui donne toutes les informations sur le composant
+https://reacttraining.com/react-router/
+
+// -------------
+
+// en 2011 => grosse communauté
+// principaux concepts pour créer des blocs visuels 
+// plus léger que Angular => plus facile à prendre en main 
+// https://javascript.developpez.com/actu/289055/Etat-de-JavaScript-en-2019-les-developpeurs-aiment-un-peu-plus-React-Angular-est-en-declin-un-groupe-de-developpeurs-pense-que-JS-est-trop-complexe/
+
+// en 2019 => Développeur Front quell techno il préfère utiliser => React 
+
+// react => ReactJS => site internet exemple https://developer.mozilla.org/en-US/
+
+react + react dom  => html <h1>
+            jsx 
+
+create-react-app projet
+cd projet
+npm start 
+
+// React native => Application MObile compatible iphone / Android 
+                    <Text></Text>
+
+react + react native  => Java // Swift 
+
+3/ 4 lib à installer
+installer => téléphone verictuel
+npm start 
+
+// logiciel pour les ordinateurs
+
+React Desktop 
+
+---------------------------------------
+
+je tape dans ma barre d'adresse n'importe quoi 
+
+localhost:3000/blabla => 404 page demandée n'existe pas  
+
+créer un nouveau src/front/notFound.jsx
+
+
+
 
