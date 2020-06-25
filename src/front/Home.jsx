@@ -9,6 +9,9 @@ class Home extends Component {
             { id: 4, titre: "article 4", content: "lorem ipsum", url: "https://via.placeholder.com/400x200" },
         ]
     }
+    // Pause => 15h30 
+    // service => consommé par les composants notamment quand ils ont besoin de données 
+    // 
     render() {
         return (
             <div>
