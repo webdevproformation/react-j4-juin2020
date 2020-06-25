@@ -6,9 +6,9 @@ class Navbar extends Component {
     }
     render() {
         return (
-            <nav className="navbar navbar-expand navbar-light bg-primary">
+            <nav className="navbar navbar-expand navbar-dark bg-primary">
                 <span className="navbar-brand">
-                    <img src={this.state.urlLogo} alt="" style={{ width: 50 }} />
+                    <img src={this.state.urlLogo} alt="" style={{ width: 30 }} />
                 </span>
                 <ul className="navbar-nav">
                     <li className="nav-item">
@@ -21,5 +21,4 @@ class Navbar extends Component {
             </nav>);
     }
 }
-
 export default Navbar;

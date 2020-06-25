@@ -29,3 +29,18 @@ bootstrap pour la mise en forme
 => liaison entre la barre de lien / ce que l'on voit 
 // ajax pour mettre à jour l'écran (Angular => Routing => tableau url => composant)
 
+--------------
+
+une fois la barre de menu prête et afficher
+
+ajouter un nouveau module => react-router-dom 
+
+stopper le serveur via un Ctrl + C
+
+npm i react-router-dom
+
+relancer votre serveur de dév
+
+npm start
+
+--------------
