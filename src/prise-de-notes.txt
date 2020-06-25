@@ -200,8 +200,7 @@ Navbar.jsx
 ---------------------------------------
 
 Dans le composant Home.jsx 
-
-remplir de la state du composant  
+remplir le state du composant  :
 
 state = {
     contenu : [
@@ -211,7 +210,7 @@ state = {
         {id : 4 , titre : "article 4" , content:"lorem ipsum" , url:"https://via.placeholder.com/400x200"},
     ]
 }
-
+=> dans le render 
 => dans la vue du composant après le titre faire une boucle .map()
 
 pour afficher chaque item this.state.contenu 
@@ -220,8 +219,10 @@ pour afficher chaque item this.state.contenu
     <h2>titre</h2>
     <img src="url" alt="">
     <p>contenu</p>
-    <p><Link to="/articles/id">lire la suite </a>
+    <p><Link to="/articles/id">lire la suite </Link></p>
 </article>
+
+=> service => API 
 
 
 
