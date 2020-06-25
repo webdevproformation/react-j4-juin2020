@@ -32,6 +32,13 @@ export function getLastArticles(nbArticle) {
 récupérer un article via son id
 */
 
+export function findArticleById(id) {
+    const resultat = data.find(function (el) {
+        return el.id === parseInt(id)
+    });
+    return resultat;
+}
+
 
 // formulaire
 
