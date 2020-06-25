@@ -25,3 +25,7 @@ Barre de menu => Navbar
     lien vers la page articles
 bootstrap pour la mise en forme 
 
+=> install react-router-dom 
+=> liaison entre la barre de lien / ce que l'on voit 
+// ajax pour mettre à jour l'écran (Angular => Routing => tableau url => composant)
+
