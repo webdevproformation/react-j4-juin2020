@@ -1,0 +1,19 @@
+lancer un terminal  dans le dossier react
+create-react-app jour4
+cd jour4
+npm i bootstrap
+npm start
+
+---------------
+
+le projet jour4 va être le projet final
+dans lequel nous allons utiliser le maximum de techniques
+
+- toutes les techniques vues
+- Routing (menu)
+- API
+- Formulaire
+- Déploiement
+
+
+déployer => le mettre en ligne sur un hébergeur (Heroku donne un espace gratuit)
