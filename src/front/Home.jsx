@@ -8,6 +8,8 @@ class Home extends Component {
         contenu: []
     }
     // Pause => 15h32
+
+    // https://source.unsplash.com/random/400x200
     // service => consommé par les composants notamment quand ils ont besoin de données 
     // Au lieu de stocker les données directement dans le state du composant 
     // sortir ces données dans un autre fichier 
@@ -31,10 +33,10 @@ class Home extends Component {
                 <section className="row">
                     {this.state.contenu.map(
                         (item, index) =>
-                            <article className="col" key={index}>
+                            <article className="col-3 mb-2" key={index}>
                                 <div className="card px-2">
                                     <h2>{item.titre}</h2>
-                                    <img src={item.url} alt="" className="img-fluid" />
+                                    <img src={item.url + item.id} alt="" className="img-fluid" />
                                     <p>{item.content}</p>
                                     <p><Link to={"/articles/" + item.id} className="btn btn-info">Lire la suite</Link></p>
                                 </div>
