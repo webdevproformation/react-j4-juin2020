@@ -87,7 +87,7 @@ on a l'impression que l'on change de page
 une fois que votre Application est chargée 
 dans le nagateur => il n'y a plus d'appel au serveur
 
-une grosse partie de 'lapplication est géré directement dans RAM du navigateur
+une grosse partie de l'application est géré directement dans RAM du navigateur
 
 => Application très rapide en terme de chargement
 
@@ -105,3 +105,20 @@ dans le render du composant Contact => <h1>Nous contacter</h1>
 
 3 dans la barre de menu (NavBar)
 Ajouter un nouveau Link cliquer sur le texte Contact => le composant Contact
+
+-------------------
+
+Créer un composant Post
+src/front 
+
+dans le render
+<div>
+<h1>article numéro</h1>
+<p>lorem ipsum</p>
+<div>
+
+dans le fichier App.js créer nouvelle route => pattern
+dans la barre d'adresse 
+=> route articles/:id => Post
+Avant  <Route path="/articles" component={Articles} />
+
