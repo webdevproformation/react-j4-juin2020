@@ -31,16 +31,36 @@ bootstrap pour la mise en forme
 
 --------------
 
-une fois la barre de menu prête et afficher
+une fois la barre de menu prête et afficher dans App.js, ajouter un nouveau module dans le projet jour4 => react-router-dom 
 
-ajouter un nouveau module => react-router-dom 
+1 stopper le serveur via un Ctrl + C
 
-stopper le serveur via un Ctrl + C
-
-npm i react-router-dom
+2 npm i react-router-dom
 
 relancer votre serveur de dév
 
-npm start
+3 npm start
 
 --------------
+
+Créer deux composants => 
+src/front/Home.jsx  => <h1>Bienvenue sur l'accueil</h1>
+src/front/Articles.jsx => <h1>liste des articles</h1>
+
+ce sont ces deux composants qui vont être en charge d'afficher la partie centrale de la page !
+
+-------------
+
+react-router-dom installe plusieurs composants 
+node_modules (npm i react-router-dom)
+
+<BrowserRouter> => src/index.js
+// écouter ce qui est saisi dans la barre d'adresse 
+// de votre navigateur
+
+<Route> => src/App.js 
+// Angular liaison entre url qui est saisit 
+// le composant à afficher 
+
+<Link> => Navbar.jsx
+
