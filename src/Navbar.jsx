@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 class Navbar extends Component {
     state = {
-        urlLogo: "logo192.png"
+        urlLogo: "/logo192.png"
     }
     render() {
         return (
