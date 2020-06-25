@@ -188,5 +188,14 @@ localhost:3000/blabla => 404 page demandée n'existe pas
 créer un nouveau src/front/notFound.jsx
 
 
+---------------------------------------
+
+<NavLink> => ressemble beaucoup au composant Link 
+
+si la page encours match avec l'url donnée dans composant => ajouter une class spéciale
+
+Navbar.jsx
+
+
 
 
