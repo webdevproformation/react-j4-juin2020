@@ -61,6 +61,33 @@ node_modules (npm i react-router-dom)
 <Route> => src/App.js 
 // Angular liaison entre url qui est saisit 
 // le composant à afficher 
+// routage => Angular 
+Ainsi que les composants à afficher 
+
+uniquement sur le lien qui amène vers la page d'accueil  => exact
+
+attention vous devez écrire les routes de la plus stric vers la plus générale
+
+convention / => l'url de la page d'accueil 
 
 <Link> => Navbar.jsx
+
+Lorsque vous cliquez sur un lien dans la barre de menu 
+page => rafraichi intégralement
+blanche => recherche
+
+afin d'éviter d'avoir le rechargement de page 
+intégrale 
+ remplacer la balise <a href=""></a>
+ <Link to=""></Link>
+
+SPA => Single Page Application 
+
+on a l'impression que l'on change de page
+une fois que votre Application est chargée 
+dans le nagateur => il n'y a plus d'appel au serveur
+
+une grosse partie de 'lapplication est géré directement dans RAM du navigateur
+
+=> Application très rapide en terme de chargement
 
