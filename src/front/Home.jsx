@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import { data } from "../services/ArticlesFictifs";
+import { getLastArticles } from "../services/ArticlesFictifs";
 
 
 class Home extends Component {
@@ -22,7 +22,7 @@ class Home extends Component {
     // que l'on a importé ligne 3
     componentDidMount() {
         this.setState({
-            contenu: data
+            contenu: getLastArticles(8)
         });
     }
 
