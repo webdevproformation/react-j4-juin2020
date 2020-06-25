@@ -226,6 +226,13 @@ pour afficher chaque item this.state.contenu
 
 
 
+------------------------
+
+remplir le composant Articles.jsx
+
+utiliser le service ArticlesFictifs => 
+
+afficher 5 articles dans ce composant 
 
 
 

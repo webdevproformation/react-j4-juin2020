@@ -31,3 +31,10 @@ export function getLastArticles(nbArticle) {
 /*
 récupérer un article via son id
 */
+
+
+// formulaire
+
+// API => service nous même
+// 
+// mis en ligne !
