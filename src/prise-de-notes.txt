@@ -17,3 +17,11 @@ dans lequel nous allons utiliser le maximum de techniques
 
 
 déployer => le mettre en ligne sur un hébergeur (Heroku donne un espace gratuit)
+
+
+Barre de menu => Navbar
+    logo => (utiliser une image stockée dans le dossier public)
+    lien vers la page home
+    lien vers la page articles
+bootstrap pour la mise en forme 
+
