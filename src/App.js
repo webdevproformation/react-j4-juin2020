@@ -9,6 +9,7 @@ import Articles from "./front/Articles";
 import Contact from "./front/Contact";
 import Post from "./front/Post";
 import NotFound from './front/notFound';
+import Blog from "./front/Blog";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/articles" exact component={Articles} />
           <Route path="/contact" component={Contact} />
           <Route path="/not-found" component={NotFound} />
+          <Route path="/blog" component={Blog} />
           <Route path="/" exact component={Home} />
           <Redirect to="/not-found" />
         </Switch>

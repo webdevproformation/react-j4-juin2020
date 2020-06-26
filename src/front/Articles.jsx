@@ -14,7 +14,8 @@ class Articles extends Component {
     }
 
     more(texte, max = 80) {
-        return texte.slice(0, max)
+        return texte.slice(0, max);
+        // .slice() => type string en js  
     }
 
     render() {

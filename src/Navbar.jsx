@@ -7,7 +7,7 @@ class Navbar extends Component {
     }
     render() {
         return (
-            <nav className="navbar navbar-expand navbar-dark bg-primary"
+            <nav className="navbar navbar-expand navbar-light bg-primary"
                 style={{ background: "url('font-menu.jpg')", "background-size": "cover" }}
             >
                 <span className="navbar-brand">
@@ -20,6 +20,9 @@ class Navbar extends Component {
                     </li>
                     <li className="nav-item">
                         <NavLink to="/articles" className="nav-link" activeClassName="active">Articles</NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink to="/blog" className="nav-link" activeClassName="active">Blog</NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink to="/contact" className="nav-link" activeClassName="active">Contact</NavLink>

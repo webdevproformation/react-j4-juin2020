@@ -325,3 +325,15 @@ gauche                            droite
 ml-auto
 
 margin-left : auto 
+
+
+-------------------------
+
+Créer un nouveau composant dans src/front Blog 
+
+ce composant sera accessible via l'adresse suivante 
+http://localhost:3000/blog => Ajouter la route dans App.js
+
+veuillez l'ajouter dans la barre de menu un lien Blog (modifié le composant Navbar)
+
+ce composant va juste afficher le texte suivant <h1>Blog</h1> render du composant Blog 
