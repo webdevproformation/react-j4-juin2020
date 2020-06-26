@@ -298,3 +298,18 @@ un formulaire
 // axios => npm i axios (appeler une API)
 // service online demande => message  
 
+------------------------------
+
+Cas pratique 
+
+// dans le composant Post 
+// ajouter avant le bouton retour à la liste des articles
+
+formulaire 2 seul champ textearea
+            et un bouton submit
+utiliser bootstrap pour le styliser 
+
+vérifier que le textarea est rempli 
+si le texte est rempli alors alert(merci pour votre message !);
+
+sinon alert(veuillez compléter le champ commentaire);

@@ -28,15 +28,13 @@ class Contact extends Component {
         }
         if (form.contact.email.trim() != "" && form.contact.commentaire.trim() != "") {
             form.errors = {}
-        } // email / blacklistage de server // si le serveur n'aime pas yahoo => gmail // paramétré 
+        }
+        // email / blacklistage de server // si le serveur n'aime pas yahoo => gmail // paramétré 
         // email => ping vers la boitemail => 404 => message boitemail n'existe pas
         // NodeJS / PHP 
         console.log(form.errors);
         // si les deux champs sont remplis 
         if (Object.keys(form.errors).length === 0) {
-            console.log(form);
-            // si les deux sont remplis
-            // message de remerciement
             alert("merci d'avoir rempli le formulaire")
         } else {
             // sinon // message d'alerte => veuillez compléter les deux champs 
