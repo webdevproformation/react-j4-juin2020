@@ -359,7 +359,56 @@ axios => outil qui va permettre de faire des requêtes AJAX très simplement
 
  il vient de m'installer la version 0.19.2 
 
- 
+-------------------------
+
+je souhaite mettre en ligne ma version 1 de site ! 
+
+hébergeur 
+transférer notre projet jour4 qui est actuellement sur notre ordinateur vers un hébergeur 
+
+hébergeur => heroku 
+
+comment mettre en ligne son projet React => Chapitre déploiement 
+
+section > Hébergeur : Heroku => https://www.heroku.com/ 
+
+garder précieusement vos identifiants => besoin pour la mise 
+email / mot de passe 
+
+
+
+créer un fichier server.js à la racine de votre projet
+
+modifier le fichier package.json
+
+supprimer le fichier yarn.lock 
+
+npm i express express-favicon path
+npm run-script build
+
+créer un compte sur Héroku
+installé Heroku cli 
+redémmarer tous les shell pour que heroku cli soit pris en compte 
+heroku --version 
+heroku login 
+
+
+git config --global user.name "Prénom Nom"
+git config --global user.email "email@domaine.fr"
+git init
+git add *
+git commit -m"first commit"
+
+heroku create
+
+git push heroku master
+
+heroku open
+
+
+
+
+
 
 
 
