@@ -30,10 +30,15 @@ class Blog extends Component {
             return el.id === item.id
         });
         const index = cloneArticles.indexOf(result);
-        cloneArticles.splice(index, 1);
+        cloneArticles.splice(index, 1); // compteur Like // cloneArticle[index].valeur--
         this.setState({
             articles: cloneArticles
         });
+        // [1, 2 , 3].splice(0, 1) => [2,3]
+        // [1, 2 , 3].splice(2, 1) => [1,2]
+        // [1, 2 , 3].splice(1, 2) => [1]
+        // 1er argument => index 
+        // 2ème combien d'élément je dois supprimer  
     }
     render() {
         return (
