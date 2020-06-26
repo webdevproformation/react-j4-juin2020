@@ -313,3 +313,15 @@ vérifier que le textarea est rempli
 si le texte est rempli alors alert(merci pour votre message !);
 
 sinon alert(veuillez compléter le champ commentaire);
+
+
+bien align
+parent => d-flex )=> display flex
+gauche                            droite 
+
+=> documentation bootstrap => Utilities > Display 
+
+=> documentation bootstrap => Utilities > spacing
+ml-auto
+
+margin-left : auto 
