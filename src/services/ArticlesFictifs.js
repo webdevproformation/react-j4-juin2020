@@ -23,6 +23,7 @@ export const data = [
 export function getLastArticles(nbArticle) {
     let resultat = [];
     for (let i = 0; i < nbArticle; i++) {
+
         resultat.push(data[i]);
     }
     return resultat;

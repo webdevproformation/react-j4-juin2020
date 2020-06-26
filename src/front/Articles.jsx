@@ -12,6 +12,11 @@ class Articles extends Component {
             contenu: getLastArticles(5)
         })
     }
+
+    more(texte, max = 80) {
+        return texte.slice(0, max)
+    }
+
     render() {
         return (
             <div>
@@ -23,7 +28,7 @@ class Articles extends Component {
                                 <div className="card px-2">
                                     <h2>{item.titre}</h2>
                                     <img src={item.url + item.id} alt="" className="img-fluid" />
-                                    <p>{item.content}</p>
+                                    <p>{this.more(item.content)}</p>
                                     <p><Link to={"/articles/" + item.id} className="btn btn-info">Lire la suite</Link></p>
                                 </div>
 
