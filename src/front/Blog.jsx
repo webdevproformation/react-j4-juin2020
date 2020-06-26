@@ -46,6 +46,7 @@ class Blog extends Component {
                 <h1>Blog</h1>
                 <table className="table table-striped">
                     <tr>
+                        <td>numéro</td>
                         <td>titre</td>
                         <td>contenu</td>
                         <td>actions</td>
@@ -54,6 +55,9 @@ class Blog extends Component {
                         {this.state.articles.map(
                             (item, index) => {
                                 return <tr key={index}>
+                                    <td>
+                                        {item.id}
+                                    </td>
                                     <td>
                                         {item.title}
                                     </td>
