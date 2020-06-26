@@ -23,6 +23,18 @@ class Blog extends Component {
         });
     }
 
+    delete(item) {
+        //console.log(item);
+        const cloneArticles = [...this.state.articles];
+        const result = cloneArticles.find(function (el) {
+            return el.id === item.id
+        });
+        const index = cloneArticles.indexOf(result);
+        cloneArticles.splice(index, 1);
+        this.setState({
+            articles: cloneArticles
+        });
+    }
     render() {
         return (
             <div>
@@ -44,7 +56,10 @@ class Blog extends Component {
                                         {item.body}
                                     </td>
                                     <td>
-                                        <button className="btn btn-sm btn-danger m-1">supprimer</button>
+                                        <button className="btn btn-sm btn-danger m-1"
+                                            onClick={() => this.delete(item)}>
+                                            supprimer
+                                        </button>
                                         <button className="btn btn-sm btn-warning m-1">update</button>
                                     </td>
                                 </tr>
