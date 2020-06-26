@@ -15,6 +15,8 @@ class Post extends Component {
             contenu: findArticleById(id)
         });
     }
+
+
     render() {
         return (
             <div>

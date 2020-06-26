@@ -26,6 +26,11 @@ class Home extends Component {
         });
     }
 
+    more(text, max = 80) {
+        return text.slice(0, max);
+    }
+
+
     render() {
         return (
             <div>
@@ -37,7 +42,7 @@ class Home extends Component {
                                 <div className="card px-2">
                                     <h2>{item.titre}</h2>
                                     <img src={item.url + item.id} alt="" className="img-fluid" />
-                                    <p>{item.content}</p>
+                                    <p>{this.more(item.content)}</p>
                                     <p><Link to={"/articles/" + item.id} className="btn btn-info">Lire la suite</Link></p>
                                 </div>
 

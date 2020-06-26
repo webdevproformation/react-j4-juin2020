@@ -21,10 +21,8 @@ export const data = [
 
 /* récupérer un nombre maximum d'article */
 export function getLastArticles(nbArticle) {
-    let resultat = []
+    let resultat = [];
     for (let i = 0; i < nbArticle; i++) {
-        // je veux afficher les 80 premiers caractères de contenu
-        data[i].content = data[i].content.substr(0, 80);
         resultat.push(data[i]);
     }
     return resultat;
