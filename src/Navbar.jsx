@@ -7,10 +7,13 @@ class Navbar extends Component {
     }
     render() {
         return (
-            <nav className="navbar navbar-expand navbar-dark bg-primary">
+            <nav className="navbar navbar-expand navbar-dark bg-primary"
+                style={{ background: "url('font-menu.jpg')", "background-size": "cover" }}
+            >
                 <span className="navbar-brand">
                     <img src={this.state.urlLogo} alt="" style={{ width: 30 }} />
                 </span>
+
                 <ul className="navbar-nav">
                     <li className="nav-item">
                         <NavLink to="/" className="nav-link" activeClassName="active" exact>Accueil</NavLink>

@@ -235,5 +235,53 @@ utiliser le service ArticlesFictifs =>
 afficher 5 articles dans ce composant 
 
 
+------------------------
+
+Paul
+
+image en background => 
+
+https://source.unsplash.com/random/1200x400
+
+
+"background-size": "cover"
+
+---------------
+
+remplacer lorem ipsum dans une partie du site + réduire le nombre de mots
+
+---------------
+
+Souleymane 
+
+diaporama == carousel ( bootstrap )
+
+Menu burger sur la nav bar 
+
+<img />
+
+---------------
+
+Formulaire 
+
+=> bootstrap soit joli 
+
+https://getbootstrap.com/docs/4.5/components/forms/
+
+form 
+    div => className form-group 
+        label => email 
+        input / textarea / select => className form-control 
+
+
+=> je veux ajouter dans la composant React Contact 
+
+un formulaire 
+    3 champs =>
+        email 
+        commmentaire 
+        button envoyer 
+
+
 
 

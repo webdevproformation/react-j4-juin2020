@@ -5,7 +5,7 @@
 // ce fichier va contenir nos données que nous avions stockées dans le state de Home
 
 export const data = [
-    { id: 1, titre: "article 1", content: "lorem ipsum", url: "https://source.unsplash.com/random/400x20" },
+    { id: 1, titre: "article 1", content: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ", url: "https://source.unsplash.com/random/400x20" },
     { id: 2, titre: "article 2", content: "lorem ipsum", url: "https://source.unsplash.com/random/400x20" },
     { id: 3, titre: "article 3", content: "lorem ipsum", url: "https://source.unsplash.com/random/400x20" },
     { id: 4, titre: "article 4", content: "lorem ipsum", url: "https://source.unsplash.com/random/400x20" },
@@ -23,6 +23,8 @@ export const data = [
 export function getLastArticles(nbArticle) {
     let resultat = []
     for (let i = 0; i < nbArticle; i++) {
+        // je veux afficher les 80 premiers caractères de contenu
+        data[i].content = data[i].content.substr(0, 80);
         resultat.push(data[i]);
     }
     return resultat;
