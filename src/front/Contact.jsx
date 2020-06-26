@@ -5,13 +5,44 @@ class Contact extends Component {
         contact: {
             email: "",
             commentaire: ""
-        }
+        },
+        errors: {}
     }
     traitementForm(e) {
         e.preventDefault();
         // permet de bloquer le chargement automatique de la page 
         // dans la balise form => attribut action=""
-        alert("je viens de cliquer sur le bouton");
+        // alert("je viens de cliquer sur le bouton");
+
+        // récupérer les informations stockées dans le state
+        const form = { ...this.state };
+        //console.log(form);
+        // vérification => est ce que les champs sont remplis => les deux soient remplis 
+        // vider le formulaire 
+        // Appeler API => // garde pour une autre page 
+        if (form.contact.email.trim() == "") {
+            form.errors.email = "Veuillez compléter l'email";
+        }
+        if (form.contact.commentaire.trim() == "") {
+            form.errors.commentaire = "Veuillez compléter le commentaire";
+        }
+        if (form.contact.email.trim() != "" && form.contact.commentaire.trim() != "") {
+            form.errors = {}
+        } // email / blacklistage de server // si le serveur n'aime pas yahoo => gmail // paramétré 
+        // email => ping vers la boitemail => 404 => message boitemail n'existe pas
+        // NodeJS / PHP 
+        console.log(form.errors);
+        // si les deux champs sont remplis 
+        if (Object.keys(form.errors).length === 0) {
+            console.log(form);
+            // si les deux sont remplis
+            // message de remerciement
+            alert("merci d'avoir rempli le formulaire")
+        } else {
+            // sinon // message d'alerte => veuillez compléter les deux champs 
+            alert("veuillez compléter les deux champs")
+        }
+
     }
 
     change(e) {

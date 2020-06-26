@@ -283,5 +283,18 @@ un formulaire
         button envoyer 
 
 
+// https://github.com/webdevproformation/react-j4-juin2020 
 
+// dernière partie du formulaire 
+
+// changer les valeurs dans le state => 
+// traiter les informations =>
+// vérifier que les champs sont remplis 
+// mettre un message de remerciement // message d'information pour dire ce qu'il manque
+// composant alert 
+
+// vider les champs du formulaire 
+// Appeler une API => en charge d'enregistrer les informations dans une base de données MongoDB
+// axios => npm i axios (appeler une API)
+// service online demande => message  
 
